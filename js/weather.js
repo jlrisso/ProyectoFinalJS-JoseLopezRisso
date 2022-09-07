@@ -11,9 +11,9 @@
  * para caso de fracaso. En caso de éxito, se llama a la función 
  * "getWeather" que es la que se conecta a la API pasándole a la misma
  * ciertos parámetros. Una vez obtenida la data de la API, se hace un
- * filtro y me quedo solamente con los datos que necesito en el formato. 
- * que los necesito. Por ultimo se llama a la funcion "renderWeather"
- * que es la que se encarga de mostrar todo el contenido en pantalla
+ * filtro y se descartan los datos o información innecesaria. Por ultimo se
+ * llama a la funcion "renderWeather", que es la que se encarga de mostrar 
+ * todo el contenido en pantalla
  * 
  */
 
@@ -43,6 +43,18 @@ const weatherSrc = {
 // EMPIEZA MAIN
 navigator.geolocation.getCurrentPosition(positionSuccess, positionError);
 // TERMINA MAIN
+
+
+
+
+
+
+
+
+
+
+
+//FUNCIONES DEL WIDGET DEL CLIMA
 
 
 function positionSuccess({coords}) {
@@ -76,7 +88,7 @@ function parseWeather({ main, name, dt, weather, sys }){ //Filtro la data que vi
     const {temp, temp_max, temp_min } = main;            //para quedarme sólo con lo que me interesa
     const {sunrise, sunset } = sys
 
-    return {
+    return {  //Devuelvo un objeto con la data que me interesa
         currentTemp: Math.round(temp),
         highTemp: Math.round(temp_max),
         lowTemp: Math.round(temp_min),
@@ -106,6 +118,7 @@ function renderWeather (weatherData){ //Renderizo el widget del clima
 }
 
 
+
 function unixTimestampToHumanFormat(timestamp, lang) { //Dado un timestamp y un lenguaje => devulevo la fecha actual en formato Humano
     return (new Date(timestamp).toLocaleDateString(lang, {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
 }
@@ -120,32 +133,3 @@ function setValue (selector, value){ //Dado un selector (ID o CLASE) => le asign
 }
 
 
-
-/*
-const dayIndex = [(new Date(timestamp)).getDay()];
-    return ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'][dayIndex];*/
-
-
-
-
-/*
-
-    axios.get(URL, {
-            params: {
-                lat,
-                lon,
-                appid: MY_API_KEY, 
-                units: "metric", //Sistema métrico
-                lang: "sp", //Spanish
-            },
-        })
-        .then(({data}) => {
-            renderWeather(parseWeather(data));
-        })
-        .catch(e => {
-            console.log(e);
-            alert("Hubo un error consultando el Clima. Por favor, volvé a intentar");
-        })
-}
-
-*/
