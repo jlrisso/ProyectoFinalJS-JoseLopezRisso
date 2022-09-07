@@ -1,17 +1,17 @@
 
 
 
-function saveAndRender() { //Guarda y Renderiza nuevamente las Listas
+function saveAndRender() { //Guardo y Renderizo las Listas
     saveListsAndSelectedListId();
     renderLists();
 }
 
-function saveAndRenderTasks(selectedList) { //Guarda y Renderiza nuevamente el Display y las Tasks
+function saveAndRenderTasks(selectedList) { //Guardo y Renderizo el Display y las Tasks de la lista-seleccionada
     saveListsAndSelectedListId();
     renderDisplay(selectedList);
 }
 
-function saveListsAndSelectedListId() { //Guardar en el local-storage las listas y la lista selectada
+function saveListsAndSelectedListId() { //Guardo en local-storage las listas y la lista selectada
     localStorage.setItem(LIST_KEY, JSON.stringify(lists)); //(KEY, VALUE)
     localStorage.setItem(SELECTED_LIST_ID_KEY, JSON.stringify(selectedListId)); //(KEY, VALUE)
 }
