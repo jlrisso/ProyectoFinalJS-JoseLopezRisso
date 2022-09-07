@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/local_storage.js"></script>
+    <script defer src="js/List.js"></script>
+    <script defer src="js/dom_vars.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/render/render_lists.js"></script>
+    <script defer src="js/render/render_display.js"></script>
+    <script defer src="js/render/render_tasks.js"></script>
+    <script defer src="js/create_inputs.js"></script>
+    <script defer src="js/delete_buttons.js"></script>
+    <script defer src="js/edit_tasks.js"></script>
+    <script defer src="js/save.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="title"><h1>Gestor de Tareas</h1></div>
+    <div class="all-lists">
+        <h2 class="second__title">Mis Listas</h2>
+        <ul class="my-list-of-lists" data-lists>
+            <template id="list-template">
+                <li class="list-name"></li>
+            </template>
+        </ul>
+        <form action="" id="new-list-form">
+            <input 
+                id="input-list" 
+                type="text" 
+                class="new list" 
+                placeholder="Crear nueva lista..."
+                aria-label="new list name" 
+            />
+            <button class="btn create" aria-label="create new list">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list">
+        <div class="todo-header">
+            <h2 class="list-title"></h2>
+            <p class="task-count"></p>
+        </div>
+
+        <div class="todo-body">
+            <div class="tasks" data-tasks>
+                <template id="task-template">
+                    <div class="d-flex">
+                    <div class="task">
+                        <input type="checkbox" />
+                        <p></p>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                    </div>
+                    </div>
+                </template>
+            </div>
+
+            <div class="new-task-creator">
+                <form action="" id="new-task-form">
+                    <input id="input-task" 
+                        type="text" 
+                        class="new task" 
+                        placeholder="Crear nueva tarea..."
+                        aria-label="new task name" 
+                    />
+                    <button class="btn create" aria-label="create new task">+</button>
+                </form>
+            </div>
+
+            <div class="delete-material">
+                <button id="delete-completed-tasks" class="btn delete">Eliminar tareas
+                    completas</button>
+                <button id="delete-list" class="btn delete">Eliminar lista</button>
+            </div>
+        </div>
+    </div>
+    <div class="widget">
+        <h3 id="current-date"></h3>
+        <div class="weather wcontainer">
+                <div>
+                    <img id="weather-icon" src="" alt="" width="75" height="75">
+                    <h1 id="current-temp"></h1>
+                    <h3 id="weather-description"></h3>
+                </div>
+                <div class="secondary-info">
+                    <p class="p-weather" id="station"></p>
+                    <p class="p-weather" id="high-temp"></p>
+                    <p class="p-weather" id="low-temp"></p>
+                    <p class="p-weather" id="sunrise-time"></p>
+                    <p class="p-weather" id="sunset-time"></p>
+                </div>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+</html>
+
+
