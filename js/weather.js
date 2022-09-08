@@ -39,7 +39,6 @@ const weatherSrc = {
 
 
 
-
 // EMPIEZA MAIN
 navigator.geolocation.getCurrentPosition(positionSuccess, positionError);
 // TERMINA MAIN
@@ -104,7 +103,7 @@ function parseWeather({ main, name, dt, weather, sys }){ //Filtro la data que vi
 
 function renderWeather (weatherData){ //Renderizo el widget del clima
 
-    weatherIcon.src= weatherSrc[weatherData.main];
+    weatherIcon.src= weatherSrc[weatherData.main] || weatherSrc['Clear']; //Caso de que sea null, muestro día "Clear"
 
     setValue('#current-date', weatherData.currentDate);
     setValue('#current-temp', `${weatherData.currentTemp} °C`);

@@ -7,7 +7,7 @@
  * Email: jal.risso@gmail.com
  * 
  * Content: Este archivo contiene las funciones involucrads en el proceso
- * de edición de un TASK específico: ya sea cambiar de estado su "checkbox"
+ * de edición de un TASK específico: ya sea cambiar de estado a través de su "checkbox"
  * o editar el contenido del TASK. La función "changeTask", chequea si el 
  * click sobre el TASK responde a un click en el "CHECKBOX" o a un click sobre
  * el botón "EDIT". En caso de click sobre el "CHECKBOX", lo que hace es 
@@ -42,7 +42,7 @@ function changeTask(event) { //
 }
 
 
-function saveMyCheckbox(event) {
+function saveMyCheckbox(event) { //Guardar el nuevo estado del checkbox
     const selectedList = lists.find(list => list.id === selectedListId);
     const taskId = event.target.id;
     const selectedTask = selectedList.tasks.find(task => task.id === taskId);
@@ -51,7 +51,7 @@ function saveMyCheckbox(event) {
 }
 
 
-function editMyTask(event) {
+function editMyTask(event) { //Cuando el usuario hace click en "EDIT" se queda atento a dos eventos: KEYPRESS & BLUR
     const taskId = event.target.id;
     const pTag = document.querySelector(`p[id='${taskId}']`);
     pTag.contentEditable = true;
@@ -64,18 +64,23 @@ function editMyTask(event) {
 }
 
 
-function saveWithEnter(event) {
+function saveWithEnter(event) { //Guarda el contenido del task con ENTER
+    
     if (event?.keyCode === 13) { //Check for Enter Key (que es la número 13)
         checkForNoContentAndSave(event);       
     }
 }
 
-function saveWithBlur(event) {
-    checkForNoContentAndSave(event);
+function saveWithBlur(event) { //Guarda el contenido del task con BLUR
+    if(event.sourceCapabilities!==null) {//NOTA IMPORTANTE: Realizo esta comparación, porque sino
+        checkForNoContentAndSave(event);//cuando toco "Enter" (evento KEYPRESS), al sacar el enter el foco del elemento
+                                        //se me termina ejecutando el BLUR; Para que no se ejecute el BLUR cuando el usuario
+                                        //presiona "Enter" hago esta comparación.
+    }
 }
 
 
-function checkForNoContentAndSave(event){
+function checkForNoContentAndSave(event){ //Chequea que el nuevo contentido a guardar en el TASK sea != de "", después lo guarda en local-storage
     event.target.contentEditable = false;
     const selectedList = lists.find(list => list.id === selectedListId);
     const selectedTask = selectedList.tasks.find(task => task.id === event.target.id);

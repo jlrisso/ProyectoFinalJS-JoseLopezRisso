@@ -33,7 +33,7 @@ class List { //Clase Lista
         this.tasks.push(this.createTask(taskName));
     };
 
-    static fromJSON(arrOfObjects){ //Lo utilizo para recuperar mi "Tipo de Objetos" de Clase Lista, luego de cargar el local-storage
+    static fromJSON(arrOfObjects){ //Me permite recuperar mi "Tipo de Objetos" de Clase Lista, luego de cargar el local-storage
         arrOfObjects.forEach((object, index) => {
            arrOfObjects[index] = new List (object); 
         });
@@ -47,15 +47,3 @@ class List { //Clase Lista
 
 
 
-
-
-
-//new Date().valueOf().toString(),
-
-
-
-
-
-// new List ({id: object.id, tasks: object.tasks, title: object.title})    
-//https://teamtreehouse.com/community/why-pass-a-destructured-object-to-the-constructor
-//{...object}
