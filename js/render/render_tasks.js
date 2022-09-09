@@ -1,5 +1,34 @@
 
 
+/**
+ * 
+ * 
+ * @Author: JOSE LOPEZ RISSO
+ * Email: jal.risso@gmail.com
+ * 
+ * Content: Este archivo contiene las funciones que renderizan las
+ * tareas y una función que renderiza la cantidad de tareas pendientes
+ * 
+ * 
+ */
+
+
+
+
+ function renderDisplay(selectedList) { //Renderiza cabecera (header) de la Lista mostrada
+
+    //Incomplete Tasks
+    const incompleteTasksNumber = selectedList.tasks.reduce((acc, task) => {
+        return (!task.completed) ? acc += 1 : acc;
+    }, 0);
+
+    renderIncompleteTasks(incompleteTasksNumber);
+    renderTasks(selectedList);
+}
+
+
+
+
 
 function renderIncompleteTasks(incompleteTasksNumber) { //Renderiza contador de tareas incompletas
 

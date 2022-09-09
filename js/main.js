@@ -21,11 +21,11 @@
  */
 
 
-let lists = loadLists();
-List.fromJSON(lists);
+let lists = loadLists(); //cargar listas
+List.fromJSON(lists);    //convertirlas a mi clase "List"
 
 
-let selectedListId = loadSelectedListId();
+let selectedListId = loadSelectedListId(); //cargar Id de lista sleccionada
 
 renderLists();
 

@@ -1,6 +1,21 @@
 
 
 
+/**
+ * 
+ * 
+ * @Author: JOSE LOPEZ RISSO
+ * Email: jal.risso@gmail.com
+ * 
+ * Content: Este archivo contiene las funciones que renderizan las
+ * listas y una función que renderiza el nombre de la lista 
+ * seleccionada.
+ * 
+ * 
+ */
+
+
+
 
 function renderLists() { //Renderiza las listas
 

@@ -1,5 +1,17 @@
 
 
+/**
+ * 
+ * 
+ * @Author: JOSE LOPEZ RISSO
+ * Email: jal.risso@gmail.com
+ * 
+ * Content: Este archivo contiene funciones mediante las cuales
+ * se guarda info en el local-storage para luego volver a renderizar
+ * 
+ * 
+ */
+
 
 function saveAndRender() { //Guardo y Renderizo las Listas
     saveListsAndSelectedListId();
