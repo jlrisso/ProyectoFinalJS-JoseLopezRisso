@@ -48,13 +48,6 @@ tasksContainer.addEventListener('click', changeTask);
 
 
 //Funciones
-function showMyList(event) { //Muestra mi lista selectada
-    if (event.target.tagName.toLowerCase() !== 'li') return;
-    selectedListId = event.target.dataset.listId
-    saveAndRender();
-}
-
-
 function clearContainer(container) { //Limpia mi contenedor
     container.innerHTML = '';
 }

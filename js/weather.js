@@ -94,7 +94,7 @@ function parseWeather({ main, name, dt, weather, sys }){ //Filtro la data que vi
         stationName: name,
         description: weather[0].description, //Descripcion
         main: weather[0].main, //Para la imagen
-        sunriseTime: unixTimestampToTime(sunrise * 1000), //Unix Timestamp * 1000 (Se multiplica porque Js espera el tiempo en ms, y en UNIX es en segundos)
+        sunriseTime: unixTimestampToTime(sunrise * 1000), //Unix Timestamp * 1000 (Lo multiplica porque Js espera el tiempo en ms, y en UNIX es en segundos)
         sunsetTime: unixTimestampToTime (sunset * 1000), //Unix Timestamp * 1000 
         currentDate: unixTimestampToHumanFormat(dt *1000, 'es-ES'),//Unix Timestamp * 1000, idioma: spanish 
     }

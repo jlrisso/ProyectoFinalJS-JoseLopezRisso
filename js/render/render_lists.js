@@ -17,6 +17,16 @@
 
 
 
+ function showMyList(event) { //Muestra mi lista selectada cuando es clickeada
+    if (event.target.tagName.toLowerCase() !== 'li') return;
+    selectedListId = event.target.dataset.listId
+    saveAndRender();
+}
+
+
+
+
+
 function renderLists() { //Renderiza las listas
 
     clearContainer(listsContainer); //Remover

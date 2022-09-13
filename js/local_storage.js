@@ -16,7 +16,7 @@
 
 
 const LOCAL_STORAGE_PREFIX = 'ADVANCED_TASK_MANAGER'; //Se usa un PREFIX porque el local-storage es "site-dependent", 
-                                                      //=> todos los sitios comparten el mismo espacio (eS PARA EVITAR PISAR LAS VARIABLES)
+                                                      //=> todos los sitios comparten el mismo espacio (ES PARA EVITAR PISAR LAS VARIABLES)
 
 
 const LIST_KEY = `${LOCAL_STORAGE_PREFIX}-lists`;
