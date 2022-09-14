@@ -16,15 +16,15 @@ El proyecto consiste en una única página (html), dentro de la cual tenemos tre
 
 A continuación se detallan las secciones mencionadas previamente:
 
-1) Esta sección, que aparece al costado izquierdo de la página, permite al usuario crear diferentes listas de tareas. Una vez creada una lista, la misma se hace accesible y se le pueden agregar tareas. 
+1. Esta sección, que aparece al costado izquierdo de la página, permite al usuario crear diferentes listas de tareas. Una vez creada una lista, la misma se hace accesible y se le pueden agregar tareas. 
 
-2) Esta sección --que aparece al medio de la página-- muestra la lista de tareas seleccionada por el usuario. Si la lista no tiene tareas se muestra vacía. Caso contrario, la lista muestra las tareas que hayan sido agregadas por el usuario, y en la parte inferior, aparece un campo que posibilita la creación de nuevas tareas para esa lista que se está mostrando. Cada lista tiene un contador de tareas dinámico (un número de tareas pendientes) que se va actualizando conforme a la marcación o no del checkbox que tiene cada tarea. Por otro lado, cada tarea tiene al costado derecho un botón que permite la edición de la misma. Los cambios de la tarea editada
+2. Esta sección --que aparece al medio de la página-- muestra la lista de tareas seleccionada por el usuario. Si la lista no tiene tareas se muestra vacía. Caso contrario, la lista muestra las tareas que hayan sido agregadas por el usuario, y en la parte inferior, aparece un campo que posibilita la creación de nuevas tareas para esa lista que se está mostrando. Cada lista tiene un contador de tareas dinámico (un número de tareas pendientes) que se va actualizando conforme a la marcación o no del checkbox que tiene cada tarea. Por otro lado, cada tarea tiene al costado derecho un botón que permite la edición de la misma. Los cambios de la tarea editada
 se guardan tanto con la tecla enter como así también quitándole el foco al elemento. Finalmente, en la parte más baja de esta sección tenemos dos botones:
 
--Un botón para eliminar las tareas completas de la lista que se está mostrando. Este botón borra todas las tareas que tengan su checkbox marcado.
--Otro botón que permite eliminar completamente la lista que se está mostrando. 
+* Un botón para eliminar las tareas completas de la lista que se está mostrando. Este botón borra todas las tareas que tengan su checkbox marcado.
+* Otro botón que permite eliminar completamente la lista que se está mostrando. 
 
-3) Esta sección, que figura al costado derecho, muestra información del clima, en base a la ciudad donde uno se encuentre (geo-localización), junto con la fecha.
+3. Esta sección, que figura al costado derecho, muestra información del clima, en base a la ciudad donde uno se encuentre (geo-localización), junto con la fecha.
 
 
 ### Tecnologías aplicadas y/o utilizadas.
