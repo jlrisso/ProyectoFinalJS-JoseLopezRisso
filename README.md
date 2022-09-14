@@ -3,7 +3,7 @@
 
 
 ACERCA DEL PROYECTO
-******************************************
+
 
 El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita
 la creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas.
@@ -13,7 +13,7 @@ y dentro de la misma definir tareas específicas relacionadas con la actividad l
 
 
 ESTRUCTURA DEL PROYECTO
-******************************************
+
 
 El proyecto consiste en una única página (html), dentro de la cual tenemos 
 tres secciones definidas:
@@ -24,7 +24,7 @@ tres secciones definidas:
 
 
 DETALLES DE LA ESTRUCTURA
-******************************************
+
 
 1) Esta sección, que aparece al costado izquierdo de la página, permite al usuario crear
 diferentes listas de tareas. Una vez creada una lista, la misma se hace accesible y se 
