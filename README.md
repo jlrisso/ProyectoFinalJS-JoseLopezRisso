@@ -7,8 +7,8 @@ ACERCA DEL PROYECTO
 
 El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita
 la creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas.
-Así por ejemplo se puede crear una lista que se llame "Supermercado",
-y dentro de la misma definir tareas específicas relacionadas con la misma.
+Así por ejemplo se puede crear una lista que se llame "Trabajo",
+y dentro de la misma definir tareas específicas relacionadas con la actividad laboral.
 
 
 ******************************************
