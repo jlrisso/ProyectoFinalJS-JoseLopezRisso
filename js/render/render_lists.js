@@ -25,6 +25,11 @@
 
 
 
+//UTILITY
+function clearContainer(container) { //Limpia el contenedor que le paso como argumento
+    container.innerHTML = '';
+}
+
 
 
 function renderLists() { //Renderiza las listas

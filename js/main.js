@@ -5,7 +5,7 @@
  * Email: jal.risso@gmail.com
  * Date: 17-08-2022
  * License: 
- * Version: 
+ * Version: 1.0
  * 
  */
 
@@ -21,11 +21,11 @@
  */
 
 
-let lists = loadLists(); //cargar listas
+let lists = loadLists(); //cargar listas desde el local-storage
 List.fromJSON(lists);    //convertirlas a mi clase "List"
 
 
-let selectedListId = loadSelectedListId(); //cargar Id de lista sleccionada
+let selectedListId = loadSelectedListId(); //cargar Id de lista sleccionada (local-storage)
 
 renderLists();
 
@@ -43,18 +43,3 @@ tasksContainer.addEventListener('click', changeTask);
  */
 
 
-
-
-
-
-//Funciones
-function clearContainer(container) { //Limpia mi contenedor
-    container.innerHTML = '';
-}
-
-
-
-
-/*
-TOASTIFY
-*/

@@ -40,5 +40,10 @@ function createNewTask(event) { //Crea un nuevo Task
     selectedList.addTask(newTaskInput.value);
     newTaskInput.value = '';
     saveAndRenderTasks(selectedList)
+    Toastify({
+        text: "Nueva tarea agregada!",
+        duration: 2000,
+        gravity: "bottom",
+    }).showToast();
 
 }
