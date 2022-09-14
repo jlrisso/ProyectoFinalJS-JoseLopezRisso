@@ -3,7 +3,7 @@
 
 
 ACERCA DEL PROYECTO
-
+___________________
 
 El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita
 la creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas.
