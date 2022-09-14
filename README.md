@@ -1,4 +1,3 @@
-
 ## Acerca del Proyecto
 
 El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita a creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas. sí por ejemplo se puede crear una lista que se llame "Trabajo",  dentro de la misma definir tareas específicas relacionadas con la actividad laboral.
@@ -40,7 +39,7 @@ por el usuario, así como también mantiene todos los cambios en las tareas indi
 * Librerías: se utilizó Toastify, Sweet Alert y Axios. 
 * Se implementó un sistema de IDs únicos para cada lista y para cada tarea, a través del módulo CRYPTO.
 * Se aplicaron conceptos de API (con API KEY).
-* Se aplicaron conceptos de Asyn & Await.
+* Se aplicaron conceptos de Async & Await.
 * Se implementó Try & Catch.
 * Operadores avanzados.
 * Se utilizó GIT.
