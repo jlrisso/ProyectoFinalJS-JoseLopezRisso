@@ -31,20 +31,20 @@ se guardan tanto con la tecla enter como así también quitándole el foco al el
 
 Para la construcción de este proyecto se utilizó una amplia variedad de conceptos, la mayoría vistos durante el cursado. Por nombrar algunos:
 
-01) Utilización de Clases: se definió una Clase (llamada Lista), con su respectivo constructor y métodos.
-02) Conceptos avanzados de Arrays.
-03) Conceptos avanzados de Objetos.
-04) Funciones.
-05) Local-Storage. En el caso de este proyecto cuando se actualiza la página, el sitio muestra la última lista seleccionada
+* Utilización de Clases: se definió una Clase (llamada Lista), con su respectivo constructor y métodos.
+* Conceptos avanzados de Arrays.
+* Conceptos avanzados de Objetos.
+* Funciones.
+* Local-Storage. En el caso de este proyecto cuando se actualiza la página, el sitio muestra la última lista seleccionada
 por el usuario, así como también mantiene todos los cambios en las tareas individuales (checkboxs que fueran marcados),
-06) Eventos: Event Delegation.
-07) Librerías: se utilizó Toastify, Sweet Alert y Axios. 
-08) Se implementó un sistema de IDs únicos para cada lista y para cada tarea, a través del módulo CRYPTO.
-09) Se aplicaron conceptos de API (con API KEY).
-10) Se aplicaron conceptos de Asyn & Await.
-11) Se implementó Try & Catch.
-12) Operadores avanzados.
-12) Se utilizó GIT.
+* Eventos: Event Delegation.
+* Librerías: se utilizó Toastify, Sweet Alert y Axios. 
+* Se implementó un sistema de IDs únicos para cada lista y para cada tarea, a través del módulo CRYPTO.
+* Se aplicaron conceptos de API (con API KEY).
+* Se aplicaron conceptos de Asyn & Await.
+* Se implementó Try & Catch.
+* Operadores avanzados.
+* Se utilizó GIT.
 
 
 
