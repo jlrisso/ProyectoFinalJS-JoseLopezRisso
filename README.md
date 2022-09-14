@@ -4,7 +4,7 @@
 
 El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita a creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas. sí por ejemplo se puede crear una lista que se llame "Trabajo",  dentro de la misma definir tareas específicas relacionadas con la actividad laboral.
 
-## Estructura del Proyecto
+### Estructura del Proyecto
 
 El proyecto consiste en una única página (html), dentro de la cual tenemos tres secciones definidas:
 
@@ -12,7 +12,7 @@ El proyecto consiste en una única página (html), dentro de la cual tenemos tre
 2) Una sección para crear las tareas específicas para cada lista.
 3) Un widget que muestra información del clima, junto con la fecha actual.
 
-## Desarrollo de la estructura
+### Desarrollo de la estructura
 
 A continuación se detallan las secciones mencionadas previamente:
 
@@ -28,71 +28,9 @@ B) Otro botón que permite eliminar completamente la lista que se está mostrand
 3) Esta sección, que figura al costado derecho, muestra información del clima, en base a la ciudad donde uno se encuentre (geo-localización), junto con la fecha.
 
 
+### Tecnologías aplicadas y/o utilizadas.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-
-___________________
-
-
-
-
-
-
-
-
-ESTRUCTURA DEL PROYECTO
-___________________
-
-
-El proyecto consiste en una única página (html), dentro de la cual tenemos 
-tres secciones definidas:
-
-1) Sección para crear una lista.
-2) Sección para crear las tareas específicas para cada lista.
-3) Un widget que muestra información del clima, junto con la fecha actual.
-
-
-DETALLES DE LA ESTRUCTURA
-
-
-1) Esta sección, que aparece al costado izquierdo de la página, permite al usuario crear
-diferentes listas de tareas. Una vez creada una lista, la misma se hace accesible y se 
-le pueden agregar tareas. 
-
-2) Esta sección --que aparece al medio de la página-- muestra la lista de tareas seleccionada
-por el usuario. Si la lista no tiene tareas se muestra vacía. Caso contrario, la lista muestra
-las tareas que hayan sido agregadas por el usuario, y en la parte inferior, aparece un campo
-que posibilita la creación de nuevas tareas para esa lista que se está mostrando. Cada lista
-tiene un contador de tareas dinámico (un número de tareas pendientes) que se va actualizando 
-conforme a la marcación o no del checkbox que tiene cada tarea. Por otro lado, cada tarea 
-tiene al costado derecho un botón que permite la edición de la misma. Los cambios de la tarea editada
-se guardan tanto con la tecla enter como así también quitándole el foco al elemento. Finalmente,
-en la parte más baja de esta sección tenemos dos botones:
-
-A) Un botón para eliminar las tareas completas de la lista que se está mostrando. Este botón
-borra todas las tareas que tengan su checkbox marcado.
-
-B) Otro botón que permite eliminar completamente la lista que se está mostrando. 
-
-3) Esta sección, que figura al costado derecho, muestra información del clima, en base a la ciudad
-donde uno se encuentre (geo-localización), junto con la fecha.
-
-
-
-
-TECNOLOGIAS APLICADAS Y/O UTILIZADAS
-******************************************
-
-Para la construcción de este proyecto se utilizó una amplia variedad de conceptos,
-la mayoría vistos durante el cursado. Por nombrar algunos:
+Para la construcción de este proyecto se utilizó una amplia variedad de conceptos, la mayoría vistos durante el cursado. Por nombrar algunos:
 
 01) Utilización de Clases: se definió una Clase (llamada Lista), con su respectivo constructor y métodos.
 02) Conceptos avanzados de Arrays.
