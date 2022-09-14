@@ -26,7 +26,6 @@ function createNewList(event) { //Crea una nueva Lista
         title: newListInput.value
     });
     newListInput.value = '';
-    console.log(newList);
     lists.push(newList);
 
     saveAndRender();
