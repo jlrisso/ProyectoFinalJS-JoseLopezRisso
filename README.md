@@ -1,7 +1,7 @@
 
 
 
-******************************************
+
 ACERCA DEL PROYECTO
 ******************************************
 
@@ -11,7 +11,7 @@ Así por ejemplo se puede crear una lista que se llame "Trabajo",
 y dentro de la misma definir tareas específicas relacionadas con la actividad laboral.
 
 
-******************************************
+
 ESTRUCTURA DEL PROYECTO
 ******************************************
 
@@ -22,6 +22,9 @@ tres secciones definidas:
 2) Sección para crear las tareas específicas para cada lista.
 3) Un widget que muestra información del clima, junto con la fecha actual.
 
+
+DETALLES DE LA ESTRUCTURA
+******************************************
 
 1) Esta sección, que aparece al costado izquierdo de la página, permite al usuario crear
 diferentes listas de tareas. Una vez creada una lista, la misma se hace accesible y se 
@@ -47,7 +50,7 @@ donde uno se encuentre (geo-localización), junto con la fecha.
 
 
 
-******************************************
+
 TECNOLOGIAS APLICADAS Y/O UTILIZADAS
 ******************************************
 
