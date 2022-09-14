@@ -102,7 +102,7 @@ function parseWeather({ main, name, dt, weather, sys }){ //Filtro la data que vi
 
 
 function renderWeather (weatherData){ //Renderizo el widget del clima
-
+    
     weatherIcon.src= weatherSrc[weatherData.main] || weatherSrc['Clear']; //Caso de que sea null, muestro día "Clear"
 
     setValue('#current-date', weatherData.currentDate);
