@@ -62,6 +62,7 @@ function positionSuccess({coords}) {
 
 function positionError() {
     alert("Hubo un problema obteniendo tu ubicación. Por favor autorizanos a utilizar tu ubicación y actualizá la página");
+    weatherIcon.style.display='none';
 }
 
 async function getWeather(lat, lon, ENDPOINT, MY_API_KEY) {
