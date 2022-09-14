@@ -12,7 +12,11 @@ y dentro de la misma definir tareas específicas relacionadas con la actividad l
 
 
 
+
+
+
 ESTRUCTURA DEL PROYECTO
+___________________
 
 
 El proyecto consiste en una única página (html), dentro de la cual tenemos 
