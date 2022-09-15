@@ -1,6 +1,6 @@
 ## Acerca del Proyecto
 
-El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita a creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas. sí por ejemplo se puede crear una lista que se llame "Trabajo",  dentro de la misma definir tareas específicas relacionadas con la actividad laboral.
+El proyecto web que presento consiste en un "Gestor de Tareas" que, básicamente, posibilita a creación de múltiples listas, dentro de las cuales se pueden crear diferentes tareas. De esta manera se puede crear, por ejemplo, una lista que se llame "Trabajo" y dentro de la misma definir tareas específicas relacionadas con la actividad laboral.
 
 ### Estructura del Proyecto
 
